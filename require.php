@@ -4,7 +4,7 @@ require 'vendor/autoload.php';
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</<!-- Latest compiled and minified CSS -->
+<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 <!-- Optional theme -->
@@ -24,4 +24,3 @@ require 'vendor/autoload.php';
 
 
 
-<link rel="stylesheet" type="text/css" href="ID.css">
