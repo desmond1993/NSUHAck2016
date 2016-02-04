@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slideout Demo</title>
+    <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  </head>
+  <body>
+
+    <nav id="menu">
+      <h2>Menu</h2>
+
+      <section class="menu-section">
+        <!-- <h3 class="menu-section-title">Docs</h3> -->
+        <ul class="menu-section-list">
+          <li><a href="#" class="menu" target="_blank">View Card</a></li>
+          <li><a href="#" class="menu" target="_blank">Calendar</a></li>
+          <li><a href="#" class="menu" target="_blank">Spartan Merchants</a></li>
+          <li><a href="#" class="menu" target="_blank">Settings</a></li>
+        </ul>
+      </section>
+
+    </nav>
+
+   <!--  <main id="panel" class="panel">
+      <!-- <header>
+        <button class="toggle-button">☰</button>
+        <h2>Panel</h2>
+      </header> //--!
+      <header class="panel-header">
+        <button class="btn-hamburger js-slideout-toggle"></button>
+        <h1 class="title">Slideout.js</h1>
+      </header>
+    </main>
+ -->
+
+      <main id="panel" class="panel">
+        <header class="panel-header">
+          <button class="btn-hamburger js-slideout-toggle "></button>
+          <h1 class="title">Slideout.js</h1>
+        </header>
+
+        <section class="box">
+          <h2 class="box-title">Test</h2>
+          <div id="mocha" class="box-content"></div>
+        </section>
+
+        <footer class="panel-footer">
+          <p>with <span class="heart">❤</span> by <a href="https://getmango.com/en" target="_blank">Mango</a></p>
+        </footer>
+      </main>
+
+    // <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/1.13.0/mocha.min.js"></script>
+    <script>
+      mocha.setup('bdd');
+      var exports = null;
+      function assert(expr, msg) {
+        if (!expr) throw new Error(msg || 'failed');
+      }
+    </script>
+    <script src="node_modules/slideout/dist/slideout.min.js"></script>
+    <script>
+      window.onload = function() {
+        document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+          debugger;
+          slideout.toggle();
+        });
+
+        document.querySelector('.menu').addEventListener('click', function(eve) {
+          if (eve.target.nodeName === 'A') { slideout.close(); }
+        });
+
+        var runner = mocha.run();
+      };
+    </script>
+
+    // <script>
+    //   var slideout = new Slideout({
+    //     'panel': document.getElementById('panel'),
+    //     'menu': document.getElementById('menu'),
+    //     'padding': 256,
+    //     'tolerance': 70
+    //   });
+
+    //   // Toggle button
+    //   document.querySelector('.toggle-button').addEventListener('click', function() {
+    //     slideout.toggle();
+    //   });
+    // </script>
+
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slideout Demo</title>
+    <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  </head>
+  <body>
+
+     <nav id="menu" class="menu">
+      <a href="#" target="_blank">
+        <header class="menu-header">
+          <span class="menu-header-title">Points</span>
+        </header>
+      </a>
+
+      <section class="menu-section">
+          <ul class="menu-section-list">
+          <li><a href="#" target="_blank">View Card</a></li>
+          <li><a href="#" target="_blank">Calendar</a></li>
+          <li><a href="#" target="_blank">Spartan Merchants</a></li>
+          <li><a href="#" target="_blank">Settings</a></li>
+        </ul>
+      </section>
+
+    </nav>
+
+    <main id="panel">
+      <header>
+        <button class="toggle-button"><img src="assets/menu.png"></button>
+        <h2>Panel</h2>
+        <!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<title>Login</title>
+<style>
+#loginsect{
+width:500px;
+height:100px;
+margin:auto;
+margin-top:300px;
+}
+.form-control{
+  border-radius:50px;
+}
+.form-signin{
+  margin:auto;
+  margin-top:200px;
+}
+.dropdown{
+  margin:auto;
+}
+</style>
+</head>
+
+<body>
+
+
+    <div class="container">
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Select Your School
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="SpartanConnect.html">Norfolk State University</a></li>
+    <li><a href="#">Old Dominion University</a></li>
+    <li><a href="#">Hampton University</a></li>
+    <li><a href="#">College of William and Mary</a></li>
+  </ul>
+</div>
+      <form class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+
+    </div> <!-- /container -->
+</body>
+
+</html>
+
+      </header>
+    </main>
+
+    <script src="js/slideout.min.js"></script>
+    <script>
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+      });
+
+      // Toggle button
+      document.querySelector('.toggle-button').addEventListener('click', function() {
+        slideout.toggle();
+      });
+    </script>
+
+  </body>
+</html>
