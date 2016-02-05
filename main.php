@@ -22,10 +22,10 @@
 
       <section class="menu-section">
           <ul class="menu-section-list">
-          <li><a href="#" target="_blank">View Card</a></li>
+          <li><a href="main.php" activetarget="_blank">View Card</a></li>
           <li><a href="#" target="_blank">Calendar</a></li>
-          <li><a href="#" target="_blank">Spartan Merchants</a></li>
-          <li><a href="#" target="_blank">Settings</a></li>
+          <li><a href="Merchants.php" target="_blank">Spartan Merchants</a></li>
+          <li><a href="#"target="_blank">Settings</a></li>
         </ul>
       </section>
 
