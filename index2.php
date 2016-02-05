@@ -1,7 +1,9 @@
-<!DOCTYPE html>
 <html>
 <head>
-<link rel="shortcut icon" type="image/x-icon" href="spartanlogo.ico" />
+<?php
+session_start();
+$_SESSION['sessionEmail'];
+?>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -15,13 +17,12 @@
 
 <title>Spartan Connect</title>
 <style>
-
 .form-control{
 	border-radius:50px;
 }
 .form-signin{
 	margin:auto;
-	margin-top:28.25em;
+	margin-top:26.25em;
   width:auto;
   height:auto;
 }
@@ -31,20 +32,17 @@
   height:auto;
 }
 .container{
-
 }
-html {
-  background: url(homeback.png) no-repeat center center fixed;
+html { 
+  background: url(../images/homeback.gif) no-repeat center center fixed; 
   -webkit-background-size: cover;
-  -moz-background-size: cover;
+  -moz-background-size: cover; 
   -o-background-size: cover;
   background-size: cover;
      }
 body{
   background:transparent;
 }
-
-
 </style>
 </head>
 
@@ -58,27 +56,26 @@ body{
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="SpartanConnect.html">Norfolk State University</a></li>
+    <li><a href="index.php">Norfolk State University</a></li>
     <li><a href="#">Old Dominion University</a></li>
     <li><a href="#">Hampton University</a></li>
     <li><a href="#">College of William and Mary</a></li>
   </ul>
 </div>
-      <form class="form-signin"  action="id.php">
+      <form class="form-signin" action="id.php">
         <h2 class="form-signin-heading"></h2>
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Email address" style="width:25%;" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="password" id="password" class="form-control" placeholder="Password" style="width:25%;" required>
         <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me"> Remember me
           </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" onclick="id.php" type="submit">Sign in</button>
+        <button class="btn btn-lg btn-primary btn-block" ontype="submit" style="width:25%;">Sign in</button>
       </form>
 
     </div> <!-- /container -->
 </body>
-
 </html>
