@@ -1,5 +1,8 @@
 <html>
 <head>
+<?php
+session_start();
+?>
 <style type="text/css">
   .top-buffer{
   margin-top:20px;
@@ -62,13 +65,16 @@
     </div>
         <div class="row top-buffer">
       <div class=" text-center">
-       LastName, FirstName
-
+      <?php
+       echo  'Danielle Butts';
+       ?>
       </div>
     </div>
             <div class="row">
       <div class="text-center ">
-        #######
+             <?php
+       echo  '0373787';
+       ?>
 
       </div>
     </div>

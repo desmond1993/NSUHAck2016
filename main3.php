@@ -23,9 +23,9 @@
       <section class="menu-section">
           <ul class="menu-section-list">
           <li><a href="main.php" activetarget="_blank">View Card</a></li>
-          <li><a href="main3.php" target="_blank">Account Balace</a></li>
+          <li><a href="main3.php" target="_blank">Account Balance</a></li>
           <li><a href="main2.php" target="_blank">Spartan Merchants</a></li>
-          <li><a href="SpartanConnect.php"target="_blank">Sign-out</a></li>
+          <li><a href="SpartanConnect.php"target="_blank">Sign-Out</a></li>
         </ul>
       </section>
 
@@ -38,7 +38,7 @@
 
         <!-- Include Webpage Here -->
         <?php
-          include("id.php");
+          include("Account_Balance.php");
           ?>
 
       </header>

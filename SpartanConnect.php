@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<?php
+session_start();
+
+
+?>
 <head>
 <link rel="shortcut icon" type="image/x-icon" href="spartanlogo.ico" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -68,6 +73,14 @@ body{
         <h2 class="form-signin-heading"></h2>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <?php
+
+
+    $_SESSION["name"] = 'Danielle Butts';
+    $_SESSION['type']= 'student';
+    $_SESSION['id'] = '0373787';
+
+  ?>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <div class="checkbox">
