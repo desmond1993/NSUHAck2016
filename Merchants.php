@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" type="image/x-icon" href="spartanlogo.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="jquery-ui.css" rel="stylesheet">
 	<style>
@@ -24,7 +25,7 @@
 		margin: 0 5px 0 0;
 		position: absolute;
 		left: .2em;
-		top: 50%;
+		top: 555%;
 		margin-top: -8px;
 	}
 	#icons {
@@ -48,6 +49,10 @@
 	}
 	select {
 		width: 200px;
+		height:10px;
+	}
+	#largest{
+		fillSpace
 	}
 	</style>
 
@@ -55,6 +60,7 @@
 </head>
 
 <body>
+<script>$( ".selector" ).accordion({ autoHeight: false });</script>
 	<!-- Accordion -->
 <h1 class="demoHeaders">NSU Merchants</h1>
 <div id="accordion">
@@ -71,7 +77,7 @@
 			(757) 622-7778</p>
 	</div>
 	<h3>American</h3>
-	<div><h4>Buffalo Wild Wings Grill & Bar</h4> 
+	<div id="american"><h4>Buffalo Wild Wings Grill & Bar</h4> 
 			<p>1308 Greenbrier Parkway</br>
 			Chesapeake, VA 23320</br>
 			(757) 263-4090</p>
@@ -194,7 +200,13 @@
 <script src="jquery-ui.js"></script>
 <script>
 
-$( "#accordion" ).accordion();
+$("#accordion").accordion({
+    header: "h3",
+    active:false,
+    collapsible:true,
+    heightStyle: "fillspace"
+
+});
 // Hover states on the static widgets
 $( "#dialog-link, #icons li" ).hover(
 	function() {
