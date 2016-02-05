@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" type="image/x-icon" href="spartanlogo.ico" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- Latest compiled and minified CSS -->
@@ -29,16 +31,15 @@
 width:500px;
 height:100px;
 margin:auto;
-margin-top:300px;
+margin-top:200px;
 }
 .form-control{
   border-radius:50px;
 }
 .new_event{
   margin:auto;
-  margin-top:200px;
+  margin-top:100px;
 }
-
 </style>
 </head>
 
