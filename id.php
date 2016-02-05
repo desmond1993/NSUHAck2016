@@ -71,7 +71,7 @@ border-radius:25px;
     <div class="col-xs-1 col-sm-1"></div>
       <div class="col-xs-6 col-sm-6 picPadding">
 
-        <img src="../images/defult.jpg" alt="..." class="img-thumbnail ">
+        <img src="assets/butts.jpg" alt="..." class="img-thumbnail ">
       </div>
       <div class="col-xs-5 col-sm-5">
 
@@ -88,22 +88,22 @@ border-radius:25px;
         <div class="row top-buffer">
       <div class=" text-center">
 
-      <?php
-       echo  'Danielle Butts';
-       ?>
 
-       <h3 class="name">LastName, FirstName</h3>
+
+       <h3 class="name">      <?php
+       echo  'Danielle Butts';
+       ?></h3>
 
       </div>
     </div>
             <div class="row">
       <div class="text-center ">
 
-             <?php
-       echo  '0373787';
-       ?>
 
-      <h3 class="studentid">#######</h3>
+
+      <h3 class="studentid">             <?php
+       echo  '0373787';
+       ?></h3>
 
 
       </div>
