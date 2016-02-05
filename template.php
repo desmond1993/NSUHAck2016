@@ -9,6 +9,9 @@
 $app = new \Slim\App;
 
 $app->get('/hello/:name'. function($name) {
+    // include out mysql connection code and make the connection
+	require_once 'lib/mysql.php';
+	$db = connect_db();
     echo "Hello $name";
 });
 

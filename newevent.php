@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" type="image/x-icon" href="spartanlogo.ico" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- Latest compiled and minified CSS -->
@@ -29,35 +31,36 @@
 width:500px;
 height:100px;
 margin:auto;
-margin-top:300px;
+margin-top:200px;
 }
 .form-control{
-	border-radius:50px;
+  border-radius:50px;
 }
 .new_event{
-	margin:auto;
-	margin-top:200px;
+  margin:auto;
+  margin-top:100px;
 }
-
 </style>
 </head>
 
 <body>
     <div class="container">
       <form class="new_event">
-        <h2 class="new_event-heading">Add a New Event</h2>
+        <h2 class="new_event-heading" style="text-align:center">Add a New Event</h2>
         <label for="inputEventName" class="sr-only">Event Name</label>
         <input type="text" id="inputEventName" class="form-control" placeholder="Event Name" required autofocus>
-
+       
         <label for="datepicker" class="sr-only">Date</label>
       <input type="text" id="datepicker" class="form-control" placeholder="Date" required>
-
-
-        <label for="inputAddr" class="sr-only">Address</label>
-        <input type="address" id="inputAddr" class="form-control" placeholder="Address" required>
-
+        <label for="inputTime" class="sr-only">Time</label>
+        <input type="time" id="inputTime" class="form-control" placeholder="00:00AM/PM" required>
         <label for="inputCost" class="sr-only">Cost $</label>
         <input type="cost" id="inputCost" class="form-control" placeholder="$">
+        <label for="inputAddr" class="sr-only">Address</label>
+        <input type="address" id="inputAddr" class="form-control" placeholder="Address" required>
+       
+  <textarea class="form-control" rows="2" id="comment" placeholder="Event Details"></textarea>
+        <input type="text" id="sponsors" class="form-control" placeholder="Sponsors">
         <div class="checkbox">
           <label>
             <input type="checkbox" value="no-charge" id="no-charge"> Free of charge.
@@ -66,7 +69,7 @@ margin-top:300px;
 <script type="text/javascript">
 jQuery(document).ready(function($) {
     $("#no-charge").change(function() {
-        if($(this).is(":checked")) {
+        if($(this).is(":checked")) {                
             $("#inputCost").attr("disabled", "disabled");
         }
         else {
@@ -78,25 +81,22 @@ jQuery(document).ready(function($) {
           </label>
         </div>
 
-        <label for="inputDetails" class="sr-only">Details</label>
-        <label for="inputSponsors" class="sr-only">Sponsors</label>
 
+        
+        <div class="radio">
+           <label class="radio-inline"><input type="radio" value="all" name="optradio">Available to All</label>
+          <label class="radio-inline"><input type="radio" value="stu" name="optradio">Students Only</label>
 
-
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Make available to all users.
-          </label>
         </div>
+      
+        <label>Upload Flyer</label>
+        
+        <input type="file" accept="image/*" onchange="picChange(event)"/>
 
         <button class="btn btn-lg btn-primary btn-block" type="submit">Create New Event</button>
-
-      $sql = "INSERT INTO event(fname, lname, mname,qreader, idNumber, email, typeID)
-VALUES ('$fname', '$lname', '$mname', '$qreader', '$idNumber', '$email', '$typeID')";
-
       </form>
 
     </div> <!-- /container -->
 </body>
 
-</html>
+</html> 
