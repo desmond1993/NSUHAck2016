@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Slideout Demo</title>
+    <title>Spartan Connect</title>
     <meta http-equiv="cleartype" content="on">
     <meta name="MobileOptimized" content="320">
     <meta name="HandheldFriendly" content="True">
@@ -14,11 +14,11 @@
   <body>
 
      <nav id="menu" class="menu">
-      <a href="#" target="_blank">
         <header class="menu-header">
-          <span class="menu-header-title">Points</span>
+          <span class="menu-header-title">Points: 850
+          </span>
         </header>
-      </a>
+
 
       <section class="menu-section">
           <ul class="menu-section-list">
@@ -42,6 +42,7 @@
     </main>
 
     <script src="js/slideout.min.js"></script>
+    <script src="js/slideout.js"></script>
     <script>
       var slideout = new Slideout({
         'panel': document.getElementById('panel'),
