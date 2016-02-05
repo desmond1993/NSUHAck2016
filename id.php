@@ -1,30 +1,51 @@
 <html>
 <head>
+
 <style type="text/css">
   .top-buffer{
   margin-top:20px;
 }
 
-.rcorners1 {
-    border-radius: 25px;
-    background-image: url("assets/id.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 260% 250%;
-    width: 300px;
-    height: 400px;
-    margin: auto;
-    font-weight: 700;
-}
 
 .picPadding{
   padding: 10px;
 
 }
+body{
+    background: url(nsubackground.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover; 
+  -o-background-size: cover;
+  background-size: cover;
 
+}
+.row{
+
+  margin-top:2px;
+  margin-bottom:93px;
+  
+}
+.studentid{
+}
+.div.col-sm-12{
+  margin-bottom:2em;
+}
+.text-center{
+
+}
+.container{
+border-radius:25px;
+    background: url("assets/id.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover; 
+  -o-background-size: cover;
+  background-size: cover;
+
+}
 
 </style>
-
+  <link rel="shortcut icon" type="image/x-icon" href="spartanlogo.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -36,10 +57,11 @@
 <!-- <link rel="stylesheet" type="text/css" href="../css/id.css"> -->
 </head>
 <body>
+<div class="container">
 <div class="rcorners1">
 
 
-	<div class="row">
+  <div class="row">
   <div class="col-sm-12">
 
     <div class="row">
@@ -62,17 +84,18 @@
     </div>
         <div class="row top-buffer">
       <div class=" text-center">
-       LastName, FirstName
+       <h3 class="name">LastName, FirstName</h3>
 
       </div>
     </div>
             <div class="row">
       <div class="text-center ">
-        #######
+      <h3 class="studentid">#######</h3>
 
       </div>
     </div>
   </div>
+</div>
 </div>
 </div>
 </body>
