@@ -27,6 +27,13 @@
 
 <title>New Event</title>
 <style>
+html{
+	background: url(nsubackground.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover; 
+  -o-background-size: cover;
+  background-size: cover;
+}
 #loginsect{
 width:500px;
 height:100px;
@@ -39,6 +46,9 @@ margin-top:200px;
 .new_event{
   margin:auto;
   margin-top:100px;
+}
+body{
+	background:transparent;
 }
 </style>
 </head>

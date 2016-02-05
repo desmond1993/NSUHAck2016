@@ -8,6 +8,7 @@
 	body{
 		font: 62.5% "Trebuchet MS", sans-serif;
 		margin: 50px;
+		background:transparent;
 	}
 	#accordion{
 		text-align: center;
@@ -53,6 +54,14 @@
 	}
 	#largest{
 		fillSpace
+	}
+	html{
+		background: url(nsubackground.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover; 
+  -o-background-size: cover;
+  background-size: cover;
+     }
 	}
 	</style>
 
