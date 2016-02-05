@@ -34,9 +34,12 @@
     <main id="panel">
       <header>
         <button class="toggle-button"><img src="assets/menu.png"></button>
-        <h2>Panel</h2>
+        <!-- <h2>Panel</h2> -->
 
         <!-- Include Webpage Here -->
+        <?php
+          include("id.php");
+          ?>
 
       </header>
     </main>

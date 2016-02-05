@@ -1,0 +1,20 @@
+.top-buffer{
+	margin-top:20px;
+}
+
+.rcorners1 {
+    border-radius: 25px;
+    background-image: url("../assets/id.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 260% 250%;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    font-weight: 700;
+}
+
+.picPadding{
+	padding: 10px;
+
+}
